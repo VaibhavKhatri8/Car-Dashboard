@@ -6,7 +6,7 @@ import eye from "./assets/icon.svg";
 function SignIn() {
   return (
     <div className="w-full flex justify-center items-center">
-      <div className="max-w-[506px] py-44">
+      <div className="max-w-[506px] w-full  py-44">
         <div>
           <h1 className="text-[#242731] font-bold text-3xl">Get's started</h1>
           <p className="font-inter font-medium text-lg text-[#353945] pt-4">
