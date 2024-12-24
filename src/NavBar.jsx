@@ -40,7 +40,7 @@ const NavBar = () => {
                   ></path>
                 </svg>
               </button>
-              <a href="https://flowbite.com" className="flex ms-2 md:me-24">
+              <a href="" className="flex ms-2 md:me-24">
                 <img src={logo} className="h-8 me-3" alt="Motiv. Logo" />
                 <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
                   Motiv.
@@ -90,11 +90,6 @@ const NavBar = () => {
                         data-dropdown-toggle="dropdown-user"
                       >
                         <span className="sr-only">Open user menu</span>
-                        <img
-                          className="w-8 h-8 rounded-full"
-                          src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                          alt="user photo"
-                        />
                       </button>
                     </div>
                   </div>
