@@ -1,6 +1,6 @@
 import React from "react";
 import google from "./assets/google.svg";
-import fb from "./assets/filled.svg";
+import fb from "./assets/Filled.svg";
 import eye from "./assets/icon.svg";
 
 function SignIn() {
