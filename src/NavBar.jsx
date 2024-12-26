@@ -4,6 +4,8 @@ import logo from "./assets/logo.svg";
 import bell from "./assets/bell.svg";
 import one from "./assets/one.svg";
 import { useState } from "react";
+import Settings from "./Settings";
+import Messages from "./Messages";
 
 const NavBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -233,8 +235,10 @@ const NavBar = () => {
         </div>
       </aside>
 
-      <div className="p-4 sm:ml-64">
+      <div className="p-4 sm:ml-64 bg-[#F5F5F5]">
         <SignIn />
+        <Settings />
+        <Messages />
       </div>
     </div>
   );

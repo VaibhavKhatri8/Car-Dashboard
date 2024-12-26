@@ -10,6 +10,7 @@ export default {
       fontFamily: {
         sans: ["DM Sans", "sans-serif"],
         inter: ["Inter", "sans-serif"],
+        popins: ["Poppins", "sans-serif"],
       },
     },
   },
