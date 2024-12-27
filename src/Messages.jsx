@@ -12,10 +12,10 @@ import send from "./assets/send.svg";
 
 const Messages = () => {
   return (
-    <div className="p-4 sm:ml-64 bg-[#F5F5F5]">
-      <div className="w-full p-8 bg-white mt-16">
-        <div className="flex gap-8 h-full">
-          <div className="min-w-[272px] max-h-[680px] flex flex-col ">
+    <div className="flex justify-center  p-4 sm:ml-64 bg-[#F5F5F5] max-h-screen">
+      <div className=" p-4 sm:p-8 w-full bg-white mt-16 ">
+        <div className=" h-full  min-[896px]:flex lg:gap-8 ">
+          <div className="h-full lg:min-w-[272px] flex flex-col gap-10  ">
             <div className="flex flex-col gap-7 pr-3">
               <div className="flex w-full justify-between">
                 <h1 className="font-inter font-bold text-3xl text-[#292C31]">
@@ -34,8 +34,8 @@ const Messages = () => {
                 ></input>
               </label>
             </div>
-            <div className=" overflow-y-auto ">
-              <div className="mt-10 flex flex-col w-full">
+            <div className=" flex flex-col gap-10 overflow-y-auto h-full ">
+              <div className=" flex flex-col w-full">
                 <div className="flex gap-2">
                   <img src={pin} />
                   <h4 className="font-inter font-medium text-xs text-[#A9ABAD]">
@@ -43,7 +43,7 @@ const Messages = () => {
                   </h4>
                 </div>
                 <div className=" flex flex-col gap-6 mt-4">
-                  <div className="flex justify-between items-center w-full">
+                  <div className="flex justify-between items-center w-full md:min-w-[272px]">
                     <div className="flex items-center gap-3.5 w-full">
                       <img src={avatar} />
                       <div className="w-full">
@@ -60,7 +60,7 @@ const Messages = () => {
                       <img src={two} className=" h-4 w-4" />
                     </div>
                   </div>
-                  <div className="flex justify-between items-center w-full">
+                  <div className="flex justify-between items-center w-full md:min-w-[272px]">
                     <div className="flex items-center gap-3.5 w-full">
                       <img src={avatar} />
                       <div className="w-full">
@@ -77,7 +77,7 @@ const Messages = () => {
                       <img src={two} className=" h-4 w-4" />
                     </div>
                   </div>
-                  <div className="flex justify-between items-center w-full">
+                  <div className="flex justify-between items-center w-full md:min-w-[272px]">
                     <div className="flex items-center gap-3.5 w-full">
                       <img src={avatar} />
                       <div className="w-full">
@@ -96,7 +96,7 @@ const Messages = () => {
                   </div>
                 </div>
               </div>
-              <div className="mt-10 flex flex-col w-full ">
+              <div className=" flex flex-col w-full ">
                 <div className="flex gap-2">
                   <img src={pin} />
                   <h4 className="font-inter font-medium text-xs text-[#A9ABAD]">
@@ -104,7 +104,7 @@ const Messages = () => {
                   </h4>
                 </div>
                 <div className=" flex flex-col gap-6 mt-4">
-                  <div className="flex justify-between items-center w-full">
+                  <div className="flex justify-between items-center w-full md:min-w-[272px]">
                     <div className="flex items-center gap-3.5 w-full">
                       <img src={avatar} />
                       <div className="w-full">
@@ -121,7 +121,7 @@ const Messages = () => {
                       <img src={two} className=" h-4 w-4" />
                     </div>
                   </div>
-                  <div className="flex justify-between items-center w-full">
+                  <div className="flex justify-between items-center w-full md:min-w-[272px]">
                     <div className="flex items-center gap-3.5 w-full">
                       <img src={avatar} />
                       <div className="w-full">
@@ -138,7 +138,7 @@ const Messages = () => {
                       <img src={two} className=" h-4 w-4" />
                     </div>
                   </div>
-                  <div className="flex justify-between items-center w-full">
+                  <div className="flex justify-between items-center w-full md:min-w-[272px]">
                     <div className="flex items-center gap-3.5 w-full">
                       <img src={avatar} />
                       <div className="w-full">
@@ -155,7 +155,7 @@ const Messages = () => {
                       <img src={two} className=" h-4 w-4" />
                     </div>
                   </div>
-                  <div className="flex justify-between items-center w-full">
+                  <div className="flex justify-between items-center w-full md:min-w-[272px]">
                     <div className="flex items-center gap-3.5 w-full">
                       <img src={avatar} />
                       <div className="w-full">
@@ -172,7 +172,7 @@ const Messages = () => {
                       <img src={two} className=" h-4 w-4" />
                     </div>
                   </div>
-                  <div className="flex justify-between items-center w-full">
+                  <div className="flex justify-between items-center w-full md:min-w-[272px]">
                     <div className="flex items-center gap-3.5 w-full">
                       <img src={avatar} />
                       <div className="w-full">
@@ -193,7 +193,7 @@ const Messages = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full">
+          <div className=" flex-col w-full hidden min-[896px]:flex h-full">
             <div className="w-full py-4 px-6">
               <div className="flex justify-between items-center">
                 <div className="flex gap-3.5 items-center">
@@ -205,7 +205,7 @@ const Messages = () => {
                     </h2>
                   </div>
                 </div>
-                <div className="flex gap-2.5 ">
+                <div className=" lg:flex hidden gap-2.5 ">
                   <div className=" w-full p-3 bg-[#F2F6F8] rounded-[30px]">
                     <img src={video} />
                   </div>
@@ -218,8 +218,8 @@ const Messages = () => {
                 </div>
               </div>
             </div>
-            <div className=" flex flex-col p-6 gap-8">
-              <div className="mr-32">
+            <div className=" flex flex-col p-6 gap-8 overflow-y-auto min-w-[#368px]">
+              <div className=" lg:mr-20 xl:mr-32">
                 <div className="w-full flex flex-col  items-end gap-2">
                   <div className="flex gap-3.5">
                     <img src={avatar} className="w-11 h-11" />
@@ -234,14 +234,14 @@ const Messages = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex gap-3.5 ml-32">
+              <div className="flex gap-3.5  lg:ml-20 xl:ml-32">
                 <div className="py-2.5 pr-7 pl-3.5 bg-[#A162F7] rounded-b-xl rounded-tl-xl text-sm text-white font-normal">
                   yea I'm well, Thank you, i am very happy for this.yesterday
                   you have gave a pen This very nice
                 </div>
                 <img src={avatar} className="h-11 w-11" />
               </div>
-              <div className="flex flex-col gap-3 mr-32">
+              <div className="flex flex-col gap-3  lg:mr-20 xl:mr-32">
                 <div className="flex gap-3.5">
                   <img src={avatar} className="w-11 h-11" />
                   <div className="py-2.5 pr-5 pl-3.5 bg-[#F5F6FA] rounded-b-xl rounded-tr-xl text-sm text-[#363D48] font-normal">
@@ -257,7 +257,7 @@ const Messages = () => {
                   4:30 PM
                 </div>
               </div>
-              <div className="flex gap-3.5 ml-32">
+              <div className="flex gap-3.5  lg:ml-20 xl:ml-32">
                 <div className="py-2.5 pr-7 pl-3.5 bg-[#A162F7] rounded-b-xl rounded-tl-xl text-sm text-white font-normal">
                   yea I'm well, Thank you, i am very happy for this.yesterday
                   you have gave a pen This very nice
