@@ -103,12 +103,12 @@ const NavBar = () => {
 
       <aside
         id="logo-sidebar"
-        className={`fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform ${
+        className={`fixed top-0 left-0 bottom-0 z-40 w-64 flex max-h-screen pt-20 transition-transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700`}
         aria-label="Sidebar"
       >
-        <div className="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800 flex flex-col justify-between">
+        <div className=" w-full justify-between gap-2 px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800 flex flex-col ">
           <ul className="space-y-2 font-medium">
             <li>
               <div className="flex sm:hidden">
@@ -194,7 +194,7 @@ const NavBar = () => {
                   isActive
                     ? "flex items-center p-2 text-gray-900 rounded-lg bg-gray-100 "
                     : "flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
-                } // Change to your desired background color for selected state
+                } // Change to your desired back  ground color for selected state
               >
                 <img src={one} alt="Services Icon" />
                 <span className="ms-3 text-[#5F6165]">Services</span>
