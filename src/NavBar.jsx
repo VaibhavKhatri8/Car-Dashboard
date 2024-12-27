@@ -189,7 +189,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="/app/messages"
+                to="/app/services"
                 className={({ isActive }) =>
                   isActive
                     ? "flex items-center p-2 text-gray-900 rounded-lg bg-gray-100 "
@@ -210,13 +210,17 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              <NavLink
+                to="/app/messages"
+                className={({ isActive }) =>
+                  isActive
+                    ? "flex items-center p-2 text-gray-900 rounded-lg bg-gray-100 "
+                    : "flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                } // Change to your desired background color for selected state
               >
-                <img src={one} />
+                <img src={one} alt="Messages Icon" />
                 <span className="ms-3 text-[#5F6165]">Messages</span>
-              </a>
+              </NavLink>
             </li>
           </ul>
           <div className=" space-y-2">
