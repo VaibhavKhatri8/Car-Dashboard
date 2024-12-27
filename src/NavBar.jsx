@@ -4,8 +4,7 @@ import logo from "./assets/logo.svg";
 import bell from "./assets/bell.svg";
 import one from "./assets/one.svg";
 import { useState } from "react";
-import Settings from "./Settings";
-import Messages from "./Messages";
+import { NavLink, Outlet, Link } from "react-router";
 
 const NavBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -17,8 +16,8 @@ const NavBar = () => {
     <div>
       <nav className="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
         <div className="px-3 py-3 lg:px-5 lg:pl-3">
-          <div className="flex items-center gap-20">
-            <div className="flex items-center justify-start rtl:justify-end">
+          <div className="flex items-center gap-28">
+            <div className="flex items-center">
               <button
                 onClick={toggleSidebar}
                 data-drawer-target="logo-sidebar"
@@ -42,12 +41,12 @@ const NavBar = () => {
                   ></path>
                 </svg>
               </button>
-              <a href="" className="flex ms-2 md:me-24">
+              <Link to="/app" className="flex ms-2">
                 <img src={logo} className="h-8 me-3" alt="Motiv. Logo" />
                 <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
                   Motiv.
                 </span>
-              </a>
+              </Link>
             </div>
             <div className="flex justify-end sm:justify-between items-center w-full">
               <div className="hidden sm:flex">
@@ -189,13 +188,17 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              <NavLink
+                to="/app/messages"
+                className={({ isActive }) =>
+                  isActive
+                    ? "flex items-center p-2 text-gray-900 rounded-lg bg-gray-100 "
+                    : "flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                } // Change to your desired background color for selected state
               >
-                <img src={one} />
+                <img src={one} alt="Services Icon" />
                 <span className="ms-3 text-[#5F6165]">Services</span>
-              </a>
+              </NavLink>
             </li>
             <li>
               <a
@@ -217,13 +220,17 @@ const NavBar = () => {
             </li>
           </ul>
           <div className=" space-y-2">
-            <a
-              href="#"
-              className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            <NavLink
+              to="/app/settings"
+              className={({ isActive }) =>
+                isActive
+                  ? "flex items-center p-2 text-gray-900 rounded-lg bg-gray-100 "
+                  : "flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              } // Change to your desired background color for selected state
             >
-              <img src={one} />
+              <img src={one} alt="Settings Icon" />
               <span className="ms-3 text-[#5F6165]">Settings</span>
-            </a>
+            </NavLink>
             <a
               href="#"
               className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
@@ -234,12 +241,7 @@ const NavBar = () => {
           </div>
         </div>
       </aside>
-
-      <div className="p-4 sm:ml-64 bg-[#F5F5F5]">
-        <SignIn />
-        <Settings />
-        <Messages />
-      </div>
+      <Outlet />
     </div>
   );
 };
