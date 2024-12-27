@@ -228,8 +228,8 @@ const NavBar = () => {
               to="/app/settings"
               className={({ isActive }) =>
                 isActive
-                  ? "flex items-center p-2 text-gray-900 rounded-lg bg-gray-100 "
-                  : "flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                  ? "flex items-center p-2 font-medium text-gray-900 rounded-lg bg-gray-100 "
+                  : "flex items-center p-2 font-medium text-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
               } // Change to your desired background color for selected state
             >
               <img src={one} alt="Settings Icon" />
