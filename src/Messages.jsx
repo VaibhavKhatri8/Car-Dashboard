@@ -332,7 +332,7 @@ const Messages = () => {
                     </div>
                   </div>
                 </div>
-                <div className=" flex w-full">
+                <div className=" flex w-full pt-5">
                   <label className="relative w-full">
                     <img
                       src={clip}
@@ -349,8 +349,6 @@ const Messages = () => {
                   </label>
                 </div>{" "}
               </div>
-              {/*actual Messages*/}
-              {/*Type input*/}
             </div>
           </div>
         </div>
