@@ -247,8 +247,8 @@ const Messages = () => {
             } lg:flex flex-col w-full justify-between`}
           >
             <div className="flex flex-col justify-between h-full">
-              <div className="flex flex-col h-full">
-                <div className=" w-full py-4 px-6">
+              <div className="flex flex-col px-6 h-full">
+                <div className=" w-full py-4 ">
                   <div className="flex justify-between items-center">
                     <div className="flex gap-3.5 items-center">
                       <img
@@ -277,7 +277,7 @@ const Messages = () => {
                     </div>
                   </div>
                 </div>
-                <div className=" flex flex-col p-6 gap-8   overflow-y-auto w-auto">
+                <div className=" flex flex-col py-6 gap-8   overflow-y-auto w-auto">
                   <div className=" lg:mr-20 xl:mr-32">
                     <div className="w-full flex flex-col  items-end gap-2">
                       <div className="flex gap-3.5">
