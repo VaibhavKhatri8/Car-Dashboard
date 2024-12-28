@@ -18,7 +18,7 @@ const Messages = () => {
   return (
     <div className="flex justify-center  p-4 sm:ml-64 bg-[#F5F5F5] max-h-screen overflow-hidden">
       <div className=" p-4 sm:p-8 w-full bg-white mt-16 ">
-        <div className="h-full min-[896px]:flex lg:gap-8 ">
+        <div className="h-full min-[896px]:flex max-[896px]:flex lg:gap-8 ">
           <div
             className={`h-full lg:min-w-[272px] lg:flex flex-col gap-10 ${
               toggleMessage ? "flex" : "hidden"

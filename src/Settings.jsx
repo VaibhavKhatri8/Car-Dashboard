@@ -4,8 +4,8 @@ import ava from "./assets/avatar.svg";
 
 const Settings = () => {
   return (
-    <div className="p-4 sm:ml-64 bg-[#F5F5F5]">
-      <div className="p-8 mt-16 h-full bg-white">
+    <div className="p-4 sm:ml-64 bg-[#F5F5F5] max-h-screen">
+      <div className="p-8 mt-16  bg-white">
         <div className="w-full flex flex-col ">
           <h1 className="font-bold text-3xl text-[#242731]">Settings</h1>
           <div className="flex gap-4 pt-7 flex-wrap">
