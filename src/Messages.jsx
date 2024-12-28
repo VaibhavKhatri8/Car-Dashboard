@@ -20,7 +20,7 @@ const Messages = () => {
       <div className=" p-4 sm:p-8 w-full bg-white mt-16 ">
         <div className="h-full min-[896px]:flex max-[896px]:flex lg:gap-8 ">
           <div
-            className={`h-full lg:min-w-[272px] lg:flex flex-col gap-10 ${
+            className={`h-full w-full lg:max-w-[272px] lg:flex flex-col gap-10 ${
               toggleMessage ? "flex" : "hidden"
             }`}
           >
