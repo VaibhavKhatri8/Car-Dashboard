@@ -247,7 +247,7 @@ const Messages = () => {
             } lg:flex flex-col w-full justify-between`}
           >
             <div className="flex flex-col justify-between h-full">
-              <div className="flex flex-col px-6 h-full">
+              <div className="flex flex-col md:px-6 h-full">
                 <div className=" w-full py-4 ">
                   <div className="flex justify-between items-center">
                     <div className="flex gap-3.5 items-center">
